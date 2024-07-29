@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oars</title>
+     <link rel="stylesheet" href="./css/navBar.css">
+     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+ 
+ 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@137&family=Playwrite+NL:wght@100..400&display=swap');
+
+      
+        /* important */
+        .blogs:first-of-type{
+            margin-top: 150px;
+        }
+        .blog-ads:hover{
+            transform: scale(1.05);
+        }
+        .blogs{
+            display: flex;
+            padding-left: 120px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media (max-width:768px) {
+            .blogs{
+                padding-left: 10px ;
+            }
+        }
+        .blog-post {
+            display: flex;
+        }
+        .sub-blog{
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 15px;
+            font-size: large;
+        }
+      
+
+        
+        .sub-blog1 h4 a{
+            text-decoration: none;
+            color: #000;
+        }
+        .sub-blog1 h4 a:hover{
+            color:#91ad41;
+        }
+
+        .sub-blog p {
+            color: #8b8b99;
+            padding-bottom: 10px;
+            line-height:25px;
+        }
+        .blog-left{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+        @media (max-width:768px) {
+            .blog-left img{
+            width: 300px;
+        }
+        }
+        
+        .side {
+            flex: 1;
+            margin-left: 20px;
+            padding-right:0;
+            padding-left: 20px;
+            padding-right: 50px;
+            /* border-left: 1px solid #b7b5b5; */
+            /* position: fixed; */
+            
+        }
+        @media (max-width:768px) {
+            .side{
+                padding-left: 1px;
+                padding-right: 2px;
+                margin-left: 0;
+                margin-bottom: 20px;
+        }
+        }
+        
+        .side ul {
+            list-style-type: none;
+            /* padding: 0; */
+        }
+        
+        .side ul li {
+            margin-bottom: 10px;
+            color: #8b8b99;
+        }
+        
+        .side ul li span {
+            color: #8b8b99;
+            font-size: 14px;
+        }
+        .side-right {
+            text-align: left;
+            border-bottom: 1px solid #b7b5b5;
+            padding-bottom: 20px;
+            width: 400px;
+            padding-left: 20px;
+            border-left: 1px solid #ccc;
+          
+            
+        }
+        @media (max-width:768px) {
+            .side-right{
+                width: auto;
+            }
+        }
+        .category-blog li a{
+            color: black;
+            text-decoration: none;
+            /* padding-bottom: 20px; */
+            padding-left: 3px;
+        }
+        .category-blog li a:hover{
+            color:  #91ad41;
+        }
+        .category-title {
+            color:#91ad41;
+            padding-bottom: 20px;
+        }
+        .sub-blog1{
+            text-align: left;
+            padding-left: 20px;
+            /* padding-top: 30px; */
+        }
+        /* .sub-blog1 h3 {
+            margin-top: 10px;
+            padding-bottom: 20px;
+            
+        } */
+        
+        .sub-blog1 p {
+            color: #8b8b99;
+            padding-top: 15px;
+        }
+        
+        .blog-post1 {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+        }
+        .blog-post1 img:hover{
+            transform: scale(1.1);
+        }
+        .blog-post1:first-of-type{
+        
+            padding-top:20px;
+        }
+     
+        .home-news{
+            display: flex;
+            margin-top: 3px;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+            height: 430px;
+        }
+        @media (max-width:768px) {
+            .home-news{
+                height: auto;
+                /* flex-direction: column; */
+                justify-content: center;
+                align-items: center;
+            }
+            .home-news img{
+                display: none;
+            }
+            .news-text {
+                margin-top: 50px;
+                padding: 40px 20px !important;
+            }
+        }
+        .news-text{
+              background-color: #f8eee4;
+              width: 100%;
+              text-align: center;
+              padding-top: 200px;
+              padding-right: 200px;
+              font-size: 24px;
+        }
+        /* .blog-one img{
+            padding-right: 150px;
+        } */
+        .blog-one{
+            text-align: left;
+        }
+        .blog-one p:last-of-type{
+            padding-top: 20px;
+            line-height: 25px;
+            font-size: large;
+            color: #000;
+    
+        }
+        .blog-one h2 a{
+            text-decoration: none;
+            color: #000;
+            padding-top: 5px;
+            
+        }
+        .blog-one h2 a:hover{
+            text-decoration: none;
+            color:#91ad41;
+            
+        }
+        .blog-two{
+            text-align: left;
+            color: #8b8b99;
+            font-size: large;
+        }
+        .blog-two p{
+            padding-bottom: 10px;
+            line-height: 25px;
+            font-size: large;
+        }
+        .blog-button{
+         text-align: left;
+         display: flex;
+         gap: 11px;
+        }
+        .button-post  {
+            padding-right: 20px;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            color: white;
+            border-radius: 10px ; 
+            transition: .4s;
+            cursor: pointer;
+        }
+        .button-post a{
+            text-decoration: none;
+            color: white;
+        }
+       
+        .btn1{
+            border: 1px #3b5998;
+            background-color: #3b5998;
+           
+            
+        }
+        .btn1:hover {
+            border: 1px solid #3b5998;
+            background-color: #ffffff;
+            color:#3b5998;  
+
+        }
+        .btn1:hover  a{
+            color: #3b5998 !important;
+        }
+        .btn2{
+            border: 1px #00aced;
+            background-color: #00aced;
+        }
+        .btn2:hover{
+            border: 1px solid #00aced;
+            background-color: #ffffff;
+            color: #00aced;
+        }
+        .btn2:hover a{
+            color: #00aced;
+        }
+        .btn3{
+            border: 1px #cb2027;
+            background-color: #cb2027;
+        }
+        .btn3:hover{
+            border: 1px solid #cb2027;
+            background-color: #ffffff;
+            color:#cb2027;
+        }
+        .btn3:hover a{
+            color:#cb2027;
+        }
+        @media screen and (max-width: 768px){
+            .blog-left, .blog-post , .blogs{
+                flex-direction: column;
+            }
+            .blogs{
+                flex-direction: column-reverse !important;
+            }
+            .sub-blog{
+                padding-left:0 ;
+                text-align: left;
+            }
+            body{
+                text-align: center;
+            }
+            .category-blog li a{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                position: right;
+            }
+            .blog-post1{
+               text-align: left;
+              
+            }
+            
+        }
+        .blog-ads{
+            padding-top: 20px; 
+            width: 300px; 
+            /* border-top:1px #8b8b99 solid; */
+        }
+            </style>
+  </head>
+  <body>
+    <header class="header">
+        <nav>
+           <div class="nav">
+            <div class="logo">
+                <img src="https://cs-oars-1.myshopify.com/cdn/shop/files/logo_0f17b895-5380-4e52-8844-1db7d4b17451_105x.png?v=1652151825" alt="logo">
+
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop layout  </a></li>
+              <li><a href="collection.html">All Collections</a></li>
+              <li><a href="aboutUs.html">Pages</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="login.html">Sign Up</a></li>
+              <li>
+                 <form action="">
+                <input type="text" class="search-input" placeholder="Search">
+              </form></li>
+              <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+           </div>
+          </nav>
+    </header>
+    
+    <div class="home-news">
+        <img src="images/WhatsApp Image 2024-07-20 at 09.03.58_86012188.jpg" alt=" News-Image">
+         <div class="news-text">
+            <h3>Post Detail</h3>
+            <p style=" color:  #91ad41; font-family: signature;  font-family: Playwrite NL, cursive; font-size: 15px;">Home / Smoothie / Seven herbs that lower blood pressure</p>
+         </div>
+    </div>
+    <div class="blogs">
+        <div class="blog-left">
+           <div class="blog-one">
+            <img src="https://cs-oars-2.myshopify.com/cdn/shop/articles/12.jpg?v=1526526534" alt="Seven herbs that lower blood pressure">
+            <p style="padding-bottom: 10px;">By <span  style="color: #91ad41;">Oars Admin </span>Apr 18, 2018</p>
+            <h2><a href="#">Seven herbs that lower blood pressure</a></h2>
+           <b><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit...</p></b>
+        </div>
+           <div class="blog-two">
+            <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        </div>
+            <div class="blog-post">
+                <img src="https://cdn.shopify.com/s/files/1/0022/4401/8235/files/blog1_large.jpg?v=1523602126" alt="Broad bean and goats' cheese bruschetta">
+                <div class="sub-blog">
+                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. </p>
+                 <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                </div>
+             </div>  
+             <div class="blog-two">
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper</p>
+                <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                <p style="padding-left: 60px; color:  #91ad41; "><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat.</em></p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. 
+                    Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            </div>  
+            <div class=" blog-button">
+                <a href="https://facebook.com">  <button class="button-post btn1" style="padding-left: 10px; padding-right: 15px;">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+             </button ></a>
+             <a href="https://twitter.com">
+                  <button class="button-post btn2" style="padding-left: 10px; padding-right: 15px;" >
+                <i class="fab fa-twitter"></i> 
+               Twitter
+             </button>
+            </a>
+            <a href="https://pinterest.com" style="text-align: center;">
+                 <button class="button-post btn3" style="padding-left: 10px; padding-right: 15px;">
+                <i class="fab fa-pinterest"></i>
+               Pinterest
+             </button>
+            </a>
+            </div>  
+         </div>
+        <aside class="side">
+            <div class="side-right">
+                <h2 class="category-title" style=" font-family:streamster, cursive;">Category</h2>
+            <ul class="category-blog">
+                <li><a href="VEGETABLES.html"> Vegetables </a></li>
+                <li><a href="FRUITS.html"> Fruits </a></li>
+                <li><a href="SMOOTHIE.html"> Smoothie </a></li>
+                <li><a href="MEAT.html"> Meats </a></li>
+                <li><a href="vege.html"> Teas </a></li>
+                <li><a href="CAKES.html"> Cakes </a></li>
+                <li><a href="SMOOTHIE.html"> Juices </a></li>
+                <li><a href="TOP-VIEWS.html"> Top View </a></li>
+                <li><a href="BEST-SELLER.html"> Best Seller </a></li>
+                <li><a href="FRUITS.html"> All Category </a></li>
+            </ul>
+            </div>
+           <div class="side-right">
+            <h2 style=" color:#91ad41; padding-top: 15px;  font-family:streamster, cursive;">Recent Posts</h2>
+            <div class="blog-post1">
+                <img src="https://cs-oars-2.myshopify.com/cdn/shop/articles/14.jpg?v=1526526705" alt="Broad bean and goats' cheese bruschetta" width="150px" height="150px">
+                <div class="sub-blog1">
+                 <h4><a href="blogsSection1.html">Broad bean and goats' cheese bruschetta</a></h4>
+                 <p>May 09, 2018</p>
+                </div>
+             </div>
+             <div class="blog-post1">
+                <img src="https://cs-oars-2.myshopify.com/cdn/shop/articles/12.jpg?v=1526526534" alt="Seven herbs that lower blood pressure" width="150px" height="150px">
+                <div class="sub-blog1">
+                 <h4><a href="blogsSection4.html">Seven herbs that lower blood pressure</a></h4>
+                 <p>May 09, 2018</p>
+                </div>
+             </div>
+             <div class="blog-post1">
+                <img src="https://cs-oars-2.myshopify.com/cdn/shop/articles/10.jpg?v=1526526284" alt="Broad bean and goats' cheese bruschetta" width="150px" height="150px">
+                <div class="sub-blog1">
+                 <h4><a href="blogsSection6.html">Cleansing the body of Parasites</a></h4>
+                 <p>May 09, 2018</p>
+                </div>
+             </div>
+             <div class="blog-ads">
+                <img src="//cs-oars-2.myshopify.com/cdn/shop/files/oar1-banner-ads_6af78583-89e2-4d35-9807-d11b94ec8b30_345x.png?v=1655701585" alt="ADS"  >
+             </div>
+           </div>
+        </aside>
+</div>
+<section class="newsletter">
+    <div class="newsletter-container">
+        <div class="newsletter-content">
+            <h2>Subscribe Newsletter</h2>
+        </div>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email">
+            <button type="submit">SUBSCRIBE</button>
+        </div>
+        <p class="newsletter-message"></p>
+    </div>
+  </section>
+
+    <footer>
+            <div class="footer-column f1">
+                <h4>Contact Our Farm</h4>
+                <p  class="pleft">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <br>
+                <div class="footer-column1">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <p> PO Box 16122 Collins Street West</p>
+                 </div>
+                 <div class="footer-column1">
+                  <a href="#"><i class="fa-solid fa-phone"></i></a>
+                  <p>111-222-3333</p>
+                 </div>
+                 <div class="footer-column1">
+                  <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                  <p> support@kalathemes.com</p>
+            </div>
+            </div>
+            <div class="footer-column f2">
+                <h4>Follow Me</h4>
+                <ul class="social-links">
+                  <li>
+                    <a href=""><i class="fab fa-twitter"></i>
+                      <a href="https://twitter.com">Twitter</a>
+                  </li>
+                   <li>
+                    <i class="fab fa-facebook-f"></i>
+                    <a href="https://facebook.com">Facebook</a>
+                   </li>
+                   <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="http://instagram.com">Instagram</a>
+                   </li> 
+                   <li>
+                    <i class="fab fa-tiktok"></i>
+                    <a href="https://tiktok.com">TikTok</a>
+                   </li>
+                  <li>
+                    <i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com">YouTube</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="footer-column f3">
+                <h4>Useful Links</h4>
+                <ul class="social-links link1">
+                    <li><a href="aboutUs.html" class="element">About Us</a></li>
+                    <li><a href="shippingpolicy.html" class="element">Shipping Policy</a></li>
+                    <li><a href="termsofservice.html" class="element">Terms Of Service</a></li>
+                    <li><a href="privacypolicy.html" class="element">Privacy Policy</a></li>
+                    <li><a href="contactus.html" class="element">Contact Us</a></li>
+                </ul>
+               
+            </div>
+            <div class="footer-column f4">
+           <div class="sub-f4">
+            <h4 style="text-align: center; margin: auto; font-size: 29px;"><span style="color: #91ad41;">O</span>ars<span style="color: #91ad41; font-size: 40px;">.</span></h4>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempusporttitor nullam quis.</p>
+           </div>
+              </div>
+    </footer>
+<div class="last-div">
+  Copyright &copy; 2024 <span style="font-weight: bold;">OARS.</span> All Rights Reserved
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aside = document.querySelector('.side');
+        const footer = document.querySelector('footer');
+        
+        function handleScroll() {
+            const asideRect = aside.getBoundingClientRect();
+            const footerRect = footer.getBoundingClientRect();
+            
+            // Check if the aside bottom has reached the footer top
+            if (asideRect.bottom > footerRect.top) {
+                aside.classList.remove('fixed');
+            } else {
+                aside.classList.add('fixed');
+            }
+        }
+        
+        window.addEventListener('scroll', handleScroll);
+    });
+    </script>
+    
+  </body>
+</html>

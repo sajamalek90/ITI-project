@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@137&family=Playwrite+NL:wght@100..400&display=swap');
+.container-section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background: url(//cs-oars-1.myshopify.com/cdn/shop/files/Oar-bg9.png?v=1652247003) no-repeat right ;
+    font-family: Arial, sans-serif;
+    background-color: #e9efe8;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1 1 40%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+}
+
+.overlay {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.text {
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(136, 142, 131);
+    line-height: 1.5;
+}
+
+.overlay h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.overlay h3 {
+    font-style: italic;
+    font-size: 1.6em;
+    color: rgb(140, 176, 113);
+    margin: 0.5em 0;
+    font-family: "Playwrite NL", cursive;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+}
+
+.overlay-button {
+    background-color: #90c240;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.overlay-button:hover {
+    background-color: #e8e9e7;
+    color: rgb(168, 172, 167);
+}
+
+.image-container {
+    flex: 1 1 50%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container-section4 {
+        flex-direction: column;
+    }
+
+    .text-container {
+        order: 1;
+    }
+
+    .image-container {
+        order: 2;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .overlay h1 {
+        font-size: 1.5em;
+    }
+
+    .overlay h3 {
+        font-size: 1.2em;
+    }
+
+    .overlay-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay h1,
+    .overlay h3 {
+        text-align: center;
+    }
+
+    .overlay-button {
+        margin: 10px auto;
+    }
+}

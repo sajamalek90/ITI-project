@@ -1,0 +1,193 @@
+/* القواعد الافتراضية لشاشات الكمبيوتر المحمولة */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yrsa", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+} */
+
+.container-section {
+    width: 100%;
+    max-width: 1600px;
+    background-color: #ecf1ec;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(174, 204, 185, 0.849);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-image {
+    width: 50%;
+    height: auto;
+    margin-top: 49px;
+    opacity: 0;
+    animation: slide-in 2s forwards;
+}
+
+.text-content {
+    text-align: left;
+    flex: 1;
+}
+
+.core-features h4 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #91ad41;
+    text-align: left;
+    font-family: "streamster", cursive;
+}
+
+.store-heading h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.store-heading img {
+    margin: 20px 0;
+}
+
+.extra-text {
+    color: #808080;
+    font-family: "Arial", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.flex-item {
+    text-align: left;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.flex-item img.icon {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.flex-item h3 {
+    color: #000;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text-content h3 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.text-content p {
+    color: #808080;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* استعلام الوسائط لشاشات الأجهزة اللوحية */
+@media (max-width: 1024px) {
+    .container-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image {
+        width: 80%;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* استعلام الوسائط لشاشات الهواتف */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flex-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .flex-item:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .flex-item:nth-child(even) {
+        background-color: #e9e9e9;
+    }
+}
+
+/* استعلام الوسائط لشاشات أصغر من 480 بكسل */
+@media (max-width: 480px) {
+    .flex-item h3 {
+        font-size: 16px;
+    }
+
+    .flex-item p {
+        font-size: 14px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .flex-item {
+        padding: 15px;
+    }
+}

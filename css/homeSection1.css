@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@137&family=Playwrite+NL:wght@100..400&display=swap');
+
+:root {
+    font-family: "Playwrite NL", cursive;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://cs-oars-1.myshopify.com/cdn/shop/files/oar1-sl1_1512x.jpg?v=1652412784);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 55px;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .span {  
+    box-sizing: border-box;
+    color: rgb(16, 16, 16);
+    font-family: "Playwrite NL", cursive;
+    font-size: 18px;
+    height: 17.9861px;
+    margin-bottom: 25px;
+}
+
+.home h1 {
+    box-sizing: border-box;
+    color: rgb(145, 173, 65);
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    box-sizing: border-box;
+    color: rgb(141, 141, 153);
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.button {
+    appearance: none;
+    background-color: rgb(145, 173, 65);
+    border-bottom-color: rgb(145, 173, 65);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: solid;
+    border-color: rgb(145, 173, 65);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-width: 1px;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 202, 207);
+    border-color: rgb(143, 158, 106);
+}
+
+@keyframes content {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: content ease-out 2s forwards;
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transform: translate(-8px, -12.5px);
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 28px;
+    }
+    .home p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 24px;
+    }
+    .home p {
+        font-size: 14px;
+        width: 100%;
+    }
+}

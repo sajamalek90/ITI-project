@@ -1,0 +1,55 @@
+.container-section3 {
+    padding-bottom: 50px;
+}
+
+.col {
+    float: left;
+    width: 25%; /* Default for large screens */
+}
+
+.responsive-image {
+    width: 45%;
+    height: auto;
+}
+
+.pp, #main-p {
+    color: rgb(147, 140, 154);
+    text-align: center;
+    max-width: 300px;
+}
+
+.fon {
+    font-family: Fonts;
+    color: #91ad41;
+    margin: 35px;
+}
+
+.who {
+    margin: -40px;
+}
+
+.bacic {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-section3 #main-p {
+    margin: 30px 0;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Tablets: 2 images per row */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .col {
+        width: 50%; /* 2 images per row */
+        float: left;
+    }
+}
+
+/* Phones: 1 image per row */
+@media (max-width: 767px) {
+    .col {
+        width: 100%; /* 1 image per row */
+        float: none;
+    }
+}

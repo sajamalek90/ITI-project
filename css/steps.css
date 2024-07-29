@@ -1,0 +1,104 @@
+.steps-container {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    padding: 0;
+}
+
+.step-container {
+    float: left;
+    width: 25%;
+    position: relative;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation-name: animation;
+}
+
+.step-container .bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
+}
+
+.step-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.step-content {
+    z-index: 1;
+}
+
+.step-container h2 {
+    margin: 20px 0;
+}
+
+.step1 {
+    background-color: #59cca6;
+    animation-duration: 1s;
+}
+
+.step2 {
+    background-color: #91ad41;
+    animation-duration: 1.5s;
+}
+
+.step3 {
+    background-color: #e3b375;
+    animation-duration: 2s;
+}
+
+.step4 {
+    background-color: #ef7f94;
+    animation-duration: 2.5s;
+}
+
+@keyframes animation {
+    0% {
+      transform: translateY(50%)
+    }
+    100% {
+      transform: translateY(0%);
+    }
+}
+
+@media (max-width: 767px) {
+    .steps-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .step-container {
+        float: left;
+        width: 100%;
+    }
+    .step-container .bg {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .steps-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .step-container {
+        float: left;
+        width: 50%; 
+    }
+    .step-container .bg {
+        width: 300px;
+        height: 300px;
+    }
+}
